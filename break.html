@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break Time</title>
+    <style>
+        body{
+            background: url(lap.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Hind', sans-serif;
+            margin: 2px;
+        }
+        h3{
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Hind', sans-serif;
+            margin: 2px;
+        }
+        .word{
+            text-align: center;
+            font-size:20px;
+            font-weight: 700;
+        }
+        .hms{
+            display: flex;
+            justify-content: center;
+            margin: 0px;
+        }
+        .in_data{
+            
+            height: 2.3rem;;
+            width: 20%;
+            margin: 2px;
+            border-radius: 5px;
+            border-bottom: 1px whitesmoke;
+        }
+        .button{
+            justify-content: center;
+            margin: 0% 50% 0% 50%;
+            height: 30px;
+            width: 100px;
+            background-color: skyblue;
+            border-radius: 5px;
+        }
+        .button:hover{
+            background-color: rgb(0, 140, 255);
+            transition: 0.3s;
+        }
+        .demo{
+            text-align: center;
+            font-size: 25px;
+            font-weight: 600;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Set Timer For Break</h2>
+    <h3>Enter start Time</h3>
+        <div class="hms">
+            <p class="word">hours:-</p>
+            <input id="in1" class="in_data" type="number" placeholder="Hours"><br>
+        </div>
+        <div class="hms">
+            <p class="word">minutes:-</p>
+            <input id="in2" class="in_data" type="number" placeholder="Minutes"><br>
+        </div>
+        <div class="hms">
+            <p class="word">Seconds:-</p>
+            <input id="in3" class="in_data" type="number" placeholder="Seconds"><br>
+        </div>
+    <h3>Enter End Time</h3>
+        <div class="hms">
+            <p class="word">hours:-</p>
+            <input id="in_1" class="in_data" type="number" placeholder="Hours"><br>
+        </div>
+        <div class="hms">
+            <p class="word">minutes:-</p>
+            <input id="in_2" class="in_data" type="number" placeholder="Minutes"><br>
+        </div>
+        <div class="hms">
+            <p class="word">Seconds:-</p>
+            <input id="in_3" class="in_data" type="number" placeholder="Seconds"><br>
+        </div>
+        <button id="mybutton" class="button">SET</button>
+    <h2 id="demo1">Remaining Break Time...</h2>
+
+    <p id="demo" class="demo"></p>
+
+    <script src="break.js"></script>
+
+</body>
+
+</html>

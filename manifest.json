@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+    "name": "Productivity Management Chrome Extension",
+    "version": "0.1",
+    "content_scripts": [
+        {
+          "matches": [
+              "\u003Call_urls>"
+          ],
+          "js": [
+            "content.js"
+          ]
+        }
+    ],
+    "background": {
+        "persistent": true,
+        "scripts": [
+          "background.js"
+        ]
+    },
+    "permissions": [
+      "tabs",
+      "input",
+      "storage",
+      "alarms",
+      "\u003Call_urls>",
+      "webRequest",
+      "webRequestBlocking"
+    ],
+    "browser_action": {
+      "default_popup": "index.html"
+    }
+}

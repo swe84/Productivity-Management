@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlOCK SITE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/718/718672.png">
+    <style>
+        body{
+            background: url(hack.jpg);
+            background-size: cover;
+            background-repeat:no-repeat;
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            font-family: sans-serif;
+            color: white;
+        }
+        .hbd{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+        }
+        .input1{
+            justify-content: center;
+            margin: 0% 30%;
+            border-radius: 10px;
+            border-color: 10px red;
+            width: 40%;
+            height: 20%;
+        }
+        .line1{
+            margin: 0% 35% ;
+        }
+        .click{
+            font-size: 20px;
+            color: white;
+        }
+        .check{
+            height: 15px;
+            width: 15px;
+        }
+        .save{
+            text-align: center;
+            justify-content: center;
+            margin: 0% 48%;
+            font-size: 30px;
+            font-family: serif;
+            color: white;
+        }
+    </style>
+<body>
+    <section>
+        <div class="main">
+            <br>
+            <br>
+            <h1><span style="background-color: red;">BLOCK </span> <span style="color: red;">SITE </span> </h1>
+            <p class="hbd">Enter the name of the site you want to block without 'https'</p>
+            <br>
+            <textarea id="textarea" class="input1" rows="10" cols="30" spellcheck="false"></textarea>
+            <br>
+            <div class="line1">
+                <strong class="click">Click the checkbox to Enable Blocking sites </strong>
+                <input id="checkbox" class="check" type="checkbox">
+            </div>
+            <a href="#" id="save" class="save"><strong>Save</strong> </a>
+        </div>
+    </section>
+    <script src="block.js"></script>
+</body>
+
+</html>
